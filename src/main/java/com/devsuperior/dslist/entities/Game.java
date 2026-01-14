@@ -21,12 +21,12 @@ public class Game {
     private String imgUrl;
     @Column(columnDefinition = "TEXT")
     private String ShortDescription;
+    public Game() {
+    }
 
     @Column(columnDefinition = "TEXT")
     private String longDescription;
-    public Game(){
 
-    }
 // construtor
     public Game(Long id, String title, Integer year, String genre, String platforms, double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
